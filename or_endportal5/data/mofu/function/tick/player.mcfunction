@@ -1,6 +1,3 @@
-# ずっと暗視
-effect give @s night_vision infinite 255 true
-
 # 初期化されているかチェック
 function mofu:init/check
 
