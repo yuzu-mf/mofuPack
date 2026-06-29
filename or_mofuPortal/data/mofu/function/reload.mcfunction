@@ -41,7 +41,16 @@ team leave @a[team=mf_blue]
 
 # チーム作成
 team add mf_red "赤チーム"
+team modify mf_red color red
+team modify mf_red collisionRule pushOtherTeams
+team modify mf_red friendlyFire false
+team modify mf_red displayName {"text":"赤チーム","color":"red"}
+
 team add mf_blue "青チーム"
+team modify mf_blue color blue
+team modify mf_blue collisionRule pushOtherTeams
+team modify mf_blue friendlyFire false
+team modify mf_blue displayName {"text":"青チーム","color":"blue"}
 
 # 初期化してない状態へもどす
 scoreboard players set @a mf_initialized 0

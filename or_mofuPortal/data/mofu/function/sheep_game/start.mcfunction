@@ -1,3 +1,25 @@
+# =========
+# 例外を検知
+# =========
+
+# すでにゲームがスタートしていたら実行しない
+execute if score ゲーム中かどうか sheep_ingame matches 1.. run tellraw @a {"text":"ゲーム中は、ゲームを開始できません","color":"white"}
+execute if score ゲーム中かどうか sheep_ingame matches 1.. run return fail
+
+# 青チームが0人
+execute unless entity @a[team=mf_blue] run tellraw @a {"text":"青チームにだれもいません","color":"white"}
+
+# 赤チームが0人
+execute unless entity @a[team=mf_red] run tellraw @a {"text":"赤チームにだれもいません","color":"white"}
+
+# どちらかのチームが0人ならゲーム開始しない
+#execute unless entity @a[team=mf_blue] run return fail
+#execute unless entity @a[team=mf_red] run return fail
+
+# =============
+# ゲーム開始処理
+# =============
+
 # チームごとにテレポート
 execute as @a[team=mf_blue] at @s run tp @s @e[tag=blue_start,sort=nearest,limit=1]
 execute as @a[team=mf_red] at @s run tp @s @e[tag=red_start,sort=nearest,limit=1]
