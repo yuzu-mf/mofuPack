@@ -1,5 +1,8 @@
-# ポイント加算
-scoreboard players add 青チーム sheepPoint 1
+execute if entity @s[tag=point1] run scoreboard players add 青チーム sheepPoint 1
+
+execute if entity @s[tag=point3] run scoreboard players add 青チーム sheepPoint 3
+
+execute if entity @s[tag=point7] run scoreboard players add 青チーム sheepPoint 7
 
 # ディスプレイの更新
 function mofu:sheep_game/score_display/update_display

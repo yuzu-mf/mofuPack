@@ -1,6 +1,5 @@
 # 安全装置
-team leave @a[team=mf_red]
-team leave @a[team=mf_blue]
+execute as @a at @s if block ~ ~-1 ~ minecraft:blue_wool run team leave @a
 
 # メッセージを送信
 execute as @a at @s if block ~ ~-1 ~ minecraft:red_wool run tellraw @s [{"color":"white","italic":false,"selector":"@s"},{"color":"white","text":"が、"},{"color":"red","text":"赤チーム"},{"color":"white","text":"に参加した！"}]

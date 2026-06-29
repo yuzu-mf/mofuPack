@@ -19,6 +19,7 @@ scoreboard objectives add sheep_timeCount dummy
 scoreboard objectives add sheepPoint dummy "＜ひつじWorldCup＞"
 scoreboard objectives add sheep_count dummy
 scoreboard objectives add sheep_ingame dummy
+scoreboard objectives add sheep_random dummy
 
 # ひつじWorldCup　ポイントとかリセット
 scoreboard players set 赤チーム sheepPoint 0
