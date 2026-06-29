@@ -33,5 +33,15 @@ bossbar set sheep:timer value 600
 bossbar set sheep:timer players @a
 bossbar set sheep:timer visible false
 
+# チーム削除
+team remove mf_red
+team remove mf_blue
+team leave @a[team=mf_red]
+team leave @a[team=mf_blue]
+
+# チーム作成
+team add mf_red "赤チーム"
+team add mf_blue "青チーム"
+
 # 初期化してない状態へもどす
 scoreboard players set @a mf_initialized 0

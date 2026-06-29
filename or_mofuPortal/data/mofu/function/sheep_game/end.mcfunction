@@ -7,5 +7,8 @@ clear @a stick
 # ボスバーを非表示
 bossbar set sheep:timer visible false
 
+# リザルト表示
+function mofu:sheep_game/result_title
+
 # ゲーム終了にする
 scoreboard players set ゲーム中かどうか sheep_ingame 0
