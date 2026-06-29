@@ -34,6 +34,9 @@ bossbar set sheep:timer visible true
 # タブを表示
 scoreboard objectives setdisplay sidebar sheepPoint
 
+# スコアを表示するディスプレイを表示
+function mofu:sheep_game/score_display/spawn_display
+
 # 得点をリセット
 scoreboard players set 赤チーム sheepPoint 0
 scoreboard players set 青チーム sheepPoint 0

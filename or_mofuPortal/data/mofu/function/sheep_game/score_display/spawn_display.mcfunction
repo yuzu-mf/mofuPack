@@ -1,0 +1,4 @@
+#summon text_display -12 43 -107 {Tags:["score_display"],billboard:"fixed",alignment:"center",background:0,see_through:1b,shadow:0b,transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[2.0f,2.0f,2.0f],right_rotation:[0.0f,180.0f,0.0f,1.0f]}}
+summon text_display 27 -57 80 {Tags:["score_display"],billboard:"fixed",alignment:"center",background:0,see_through:1b,shadow:0b,transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[2.0f,2.0f,2.0f],right_rotation:[0.0f,180.0f,0.0f,1.0f]}}
+
+data merge entity @e[type=text_display,tag=score_display,limit=1] {text:'[{"text":"赤 0","color":"red"},{"text":" : ","color": "white"},{"text":"青 0","color":"blue"}]'}

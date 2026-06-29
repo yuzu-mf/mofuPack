@@ -1,0 +1,1 @@
+data merge entity @e[type=text_display,tag=score_display,limit=1] {text:'[{"text":"赤 ","color":"red"},{"score":{"name":"赤チーム","objective":"sheepPoint"}},{"text":" : ","color": "white"},{"text":"青 ","color":"blue"},{"score":{"name":"青チーム","objective":"sheepPoint"},"color": "blue"}]'}
